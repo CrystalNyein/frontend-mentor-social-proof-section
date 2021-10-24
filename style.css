@@ -12,18 +12,73 @@ html {
 body {
   background-color: var(--white);
   margin: 0;
+  font-family: var(--spartan);
 }
 #pattern-top {
+  width: 100vw;
+  height: 100vh;
   background-image: url("./images/bg-pattern-top-desktop.svg");
   background-repeat: no-repeat;
 }
 #pattern-bottom {
+  width: 100vw;
+  height: 100vh;
   background-repeat: no-repeat;
   background-image: url("./images/bg-pattern-bottom-desktop.svg");
   background-position: bottom right;
 }
+.main-container {
+  width: 80%;
+  padding: 5.5rem 0;
+  margin: 0 auto;
+}
+.main-upper-section {
+  display: flex;
+  justify-content: space-between;
+}
+.main-upper-section .main-text {
+  width: 40%;
+}
 .main-text h1 {
   margin-top: 0;
+  margin-bottom: 0.1rem;
+  font-size: 3.2rem;
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+.main-text p {
+  font-size: 1rem;
+  color: var(--dark-grayish-magenta);
+  line-height: 1.5rem;
+}
+.main-rating {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.rating-card {
+  width: fit-content;
+  background-color: var(--light-grayish-magenta);
+  margin: 0.8rem 0;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+}
+.card1 {
+  align-self: flex-start;
+}
+.card2 {
+  align-self: center;
+}
+.card3 {
+  align-self: flex-end;
+}
+.rating-card p {
+  display: inline-block;
+  padding-left: 1rem;
+  margin: 0.3rem;
+  color: var(--very-dark-magenta);
+  font-weight: 700;
 }
 @media only screen and (max-width: 500px) {
   #pattern-top {
@@ -31,5 +86,19 @@ body {
   }
   #pattern-bottom {
     background-image: url("./images/bg-pattern-bottom-mobile.svg");
+  }
+  .main-container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .main-upper-section .main-text {
+    width: 45%;
+  }
+  .main-container {
+    width: 85%;
+  }
+  .main-rating {
+    width: 50%;
   }
 }
