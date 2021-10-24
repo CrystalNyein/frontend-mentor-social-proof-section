@@ -92,6 +92,7 @@ body {
   margin-top: 3rem;
   flex-wrap: wrap;
   justify-content: space-between;
+  min-height: 20rem;
 }
 .review-card {
   background-color: var(--very-dark-magenta);
@@ -101,12 +102,15 @@ body {
   border-radius: 0.5rem;
   padding: 2rem;
   margin-top: 1rem;
+  align-self: center;
 }
 .review-card:first-child {
   margin-left: 0;
+  align-self: flex-start;
 }
 .review-card:last-child {
   margin-right: 0;
+  align-self: flex-end;
 }
 .review-profile {
   display: flex;
