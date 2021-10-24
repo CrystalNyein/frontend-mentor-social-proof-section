@@ -73,14 +73,20 @@ body {
 .card3 {
   align-self: flex-end;
 }
+.star {
+  padding: 0 1rem 0 0;
+  display: inline-block;
+}
 .rating-card p {
   display: inline-block;
-  padding-left: 1rem;
   margin: 0.3rem;
   color: var(--very-dark-magenta);
   font-weight: 700;
 }
 @media only screen and (max-width: 500px) {
+  html {
+    font-size: 13px;
+  }
   #pattern-top {
     background-image: url("./images/bg-pattern-top-mobile.svg");
   }
@@ -92,6 +98,9 @@ body {
   }
 }
 @media only screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
   .main-upper-section .main-text {
     width: 45%;
   }
